@@ -1,0 +1,18 @@
+dl.dl-horizontal {
+    @extend .row, .mb-0;
+
+    dt {
+        @extend .col-6, .col-md-6, .col-xl-6, .pe-2;
+        text-align   : right;
+        margin-bottom: 12px;
+    }
+
+    dd {
+        @extend .col-6, .col-md-6, .col-xl-6, .ps-2;
+        text-align: right;
+
+        @media (max-width: 768px) {
+            word-break: break-all;
+        }
+    }
+}
